@@ -1,0 +1,13 @@
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  # There are conflicts w/ data science package dependencies that don't yet support 3.9+
+  - python=3.8
+  - ipython
+  - ipywidgets
+  - ipyfilechooser
+  - pip
+  - pip:
+    - ipython_blocking
